@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/contentFragment">
+
+    <fragment
+        android:id="@+id/contentFragment"
+        android:name="com.ahchi.lisu.ui.ContentFragment"
+        android:label="fragment_content"
+        tools:layout="@layout/fragment_content" >
+        <action
+            android:id="@+id/action_contentFragment_to_consonantsFragment"
+            app:destination="@id/consonantsFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_vowelsFragment"
+            app:destination="@id/vowelsFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_consonantsVowelsFragment"
+            app:destination="@id/consonantsVowelsFragment" />
+        <action
+            android:id="@+id/action_contentFragment_to_tonesFragment"
+            app:destination="@id/tonesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/consonantsFragment"
+        android:name="com.ahchi.lisu.ui.ConsonantsFragment"
+        android:label="fragment_consonants"
+        tools:layout="@layout/fragment_consonants" />
+    <fragment
+        android:id="@+id/vowelsFragment"
+        android:name="com.ahchi.lisu.ui.VowelsFragment"
+        android:label="fragment_vowels"
+        tools:layout="@layout/fragment_vowels" />
+    <fragment
+        android:id="@+id/consonantsVowelsFragment"
+        android:name="com.ahchi.lisu.ui.ConsonantsVowelsFragment"
+        android:label="fragment_consonants_vowels"
+        tools:layout="@layout/fragment_consonants_vowels" >
+        <action
+            android:id="@+id/action_consonantsVowelsFragment_to_lessonFragment"
+            app:destination="@id/lessonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tonesFragment"
+        android:name="com.ahchi.lisu.ui.TonesFragment"
+        android:label="fragment_tones"
+        tools:layout="@layout/fragment_tones" />
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="com.ahchi.lisu.ui.LessonFragment"
+        android:label="fragment_lesson"
+        tools:layout="@layout/fragment_lesson" />
+</navigation>

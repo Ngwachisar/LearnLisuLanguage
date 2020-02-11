@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.ContentFragment">
+
+    <ImageView
+        android:id="@+id/imgWallPaper"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/wallpaper"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+<!--    <fragment-->
+<!--        android:id="@+id/wallPaperFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:name="com.ahchi.lisu.ui.WallPaperFragment"-->
+<!--        app:layout_constraintVertical_chainStyle="spread"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/recyclerContents"/>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:id="@+id/recyclerContents"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/wallPaperFragment"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"/>-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/carViewConsonants"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#E9E7F5"
+        app:layout_constraintTop_toBottomOf="@id/imgWallPaper"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/txtConsonants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consonants (ꓑꓸ ꓝꓳꓹ)"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center|left"/>
+
+        <ImageButton
+            android:id="@+id/goConsonants"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/action_arrow"
+            android:scaleType="fitCenter"
+            android:layout_margin="8dp"
+            android:layout_gravity="center|right"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewVowels"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#FAF6EA"
+        app:layout_constraintTop_toBottomOf="@id/carViewConsonants"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/txtVowels"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vowels (ꓟꓸꓸ ꓝꓳꓹ)"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center|left"/>
+
+        <ImageButton
+            android:id="@+id/goVowels"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/action_arrow"
+            android:scaleType="fitCenter"
+            android:layout_margin="8dp"
+            android:layout_gravity="center|right"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAlphabetDetail"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#DAEEF0"
+        app:layout_constraintTop_toBottomOf="@id/cardViewVowels"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/txtAlphabet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Consonants + Vowels (ꓚꓰꓸꓸꓝꓳꓹ)"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center|left"/>
+
+        <ImageButton
+            android:id="@+id/goAlphabets"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/action_arrow"
+            android:scaleType="fitCenter"
+            android:layout_margin="8dp"
+            android:layout_gravity="center|right"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTones"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardBackgroundColor="#FAE0D8"
+        app:layout_constraintTop_toBottomOf="@id/cardAlphabetDetail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/txtTones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tones (ꓢꓯꓼ ꓦꓰꓽ ꓓꓴ)"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center|left"/>
+
+        <ImageButton
+            android:id="@+id/goTones"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/action_arrow"
+            android:scaleType="fitCenter"
+            android:layout_margin="8dp"
+            android:layout_gravity="center|right"/>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
