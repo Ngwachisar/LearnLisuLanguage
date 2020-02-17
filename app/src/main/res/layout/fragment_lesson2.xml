@@ -1,25 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ui.Lesson2Fragment"
-    android:background="#DFECD0">
+    android:background="#DFECD0"
+    android:nestedScrollingEnabled="true">
 
-    <TextView
-        android:id="@+id/txtLesson2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lesson-2"
-        android:textSize="25sp"
-        android:fontFamily="sans-serif-black"
-        android:layout_margin="10dp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerLesson2Detail"
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
+        android:layout_height="match_parent"
+        android:background="#DFECD0"
+        android:orientation="vertical"
+        tools:context=".ui.Lesson2Fragment">
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/txtLesson2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Lesson-2"
+            android:textSize="25sp"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerIndexConsonants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtLesson2" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerIndexCV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recyclerIndexConsonants" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

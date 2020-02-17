@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#DFECD0"
     android:nestedScrollingEnabled="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -9,9 +11,9 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#DFECD0"
         android:orientation="vertical"
-        tools:context=".ui.LessonFragment">
+        tools:context=".ui.Lesson1Fragment"
+        android:scrollbars="none">
 
         <TextView
             android:id="@+id/txtLesson"
@@ -28,17 +30,16 @@
             android:id="@+id/recyclerIndexConsonants"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/txtLesson"/>
+            app:layout_constraintTop_toBottomOf="@id/txtLesson"
+            app:layout_constraintRight_toRightOf="parent"/>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerIndexConsonantsVowels"
+            android:id="@+id/recyclerIndexCV"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/recyclerIndexConsonants"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/recyclerIndexConsonants"/>
+            app:layout_constraintRight_toRightOf="parent"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
