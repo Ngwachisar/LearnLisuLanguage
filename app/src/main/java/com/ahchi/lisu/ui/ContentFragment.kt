@@ -1,24 +1,15 @@
 package com.ahchi.lisu.ui
 
-
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageButton
 import androidx.cardview.widget.CardView
 import androidx.navigation.findNavController
-import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-
 import com.ahchi.lisu.R
-import com.ahchi.lisu.adapter.ContentsAdapter
-import com.ahchi.lisu.model.Contents
 
-/**
- * A simple [Fragment] subclass.
- */
+
 class ContentFragment : Fragment() {
 
     override fun onCreateView(

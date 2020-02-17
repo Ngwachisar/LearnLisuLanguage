@@ -6,17 +6,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.GridLayoutManager
+import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
 import com.ahchi.lisu.R
-import com.ahchi.lisu.adapter.ConsonantsAdapter
 import com.ahchi.lisu.adapter.ConsonantsVowelsLessonAdapter
-import com.ahchi.lisu.adapter.VowelsAdapter
 import com.ahchi.lisu.model.ConsonantsVowelsLessons
-import com.example.learnlisualphabet.model.Consonants
-import com.example.learnlisualphabet.model.Vowels
 
 class ConsonantsVowelsFragment : Fragment() {
 
@@ -46,8 +41,8 @@ class ConsonantsVowelsFragment : Fragment() {
             adapter = lessonListAdapter
         }
 
+
         return  rootView
     }
-
 
 }
