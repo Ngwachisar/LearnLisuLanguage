@@ -5,25 +5,6 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-<!--    <androidx.cardview.widget.CardView-->
-<!--        android:id="@+id/carViewChapter1"-->
-<!--        android:layout_width="150dp"-->
-<!--        android:layout_height="100dp"-->
-<!--        android:layout_margin="10dp"-->
-<!--        app:cardBackgroundColor="#FDF4EB"-->
-<!--        app:cardCornerRadius="10dp">-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/txtLessonName"-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="center"-->
-<!--            android:layout_margin="8dp"-->
-<!--            android:fontFamily="sans-serif-black"-->
-<!--            android:text="Lesson" />-->
-
-<!--    </androidx.cardview.widget.CardView>-->
-
     <androidx.cardview.widget.CardView
         android:id="@+id/carViewChapter1"
         android:layout_width="match_parent"

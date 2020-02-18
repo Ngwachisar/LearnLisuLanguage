@@ -41,7 +41,6 @@ class ConsonantsVowelsFragment : Fragment() {
             adapter = lessonListAdapter
         }
 
-
         return  rootView
     }
 

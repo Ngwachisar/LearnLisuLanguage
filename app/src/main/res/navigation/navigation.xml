@@ -73,7 +73,26 @@
         android:id="@+id/tonesFragment"
         android:name="com.ahchi.lisu.ui.TonesFragment"
         android:label="fragment_tones"
-        tools:layout="@layout/fragment_tones" />
+        tools:layout="@layout/fragment_tones" >
+        <action
+            android:id="@+id/action_tonesFragment_to_tonesLesson1Fragment"
+            app:destination="@id/tonesLesson1Fragment" />
+        <action
+            android:id="@+id/action_tonesFragment_to_tonesLesson2Fragment"
+            app:destination="@id/tonesLesson2Fragment" />
+        <action
+            android:id="@+id/action_tonesFragment_to_tonesLesson3Fragment"
+            app:destination="@id/tonesLesson3Fragment" />
+        <action
+            android:id="@+id/action_tonesFragment_to_tonesLesson4Fragment"
+            app:destination="@id/tonesLesson4Fragment" />
+        <action
+            android:id="@+id/action_tonesFragment_to_tonesLesson5Fragment"
+            app:destination="@id/tonesLesson5Fragment" />
+        <action
+            android:id="@+id/action_tonesFragment_to_tonesLesson6Fragment"
+            app:destination="@id/tonesLesson6Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/lessonFragment"
         android:name="com.ahchi.lisu.ui.LessonFragment"
@@ -124,4 +143,34 @@
         android:name="com.ahchi.lisu.ui.Lesson10Fragment"
         android:label="fragment_lesson10"
         tools:layout="@layout/fragment_lesson10" />
+    <fragment
+        android:id="@+id/tonesLesson1Fragment"
+        android:name="com.ahchi.lisu.ui.TonesLesson1Fragment"
+        android:label="fragment_tones_lesson1"
+        tools:layout="@layout/fragment_tones_lesson1" />
+    <fragment
+        android:id="@+id/tonesLesson2Fragment"
+        android:name="com.ahchi.lisu.ui.TonesLesson2Fragment"
+        android:label="fragment_tones_lesson2"
+        tools:layout="@layout/fragment_tones_lesson2" />
+    <fragment
+        android:id="@+id/tonesLesson3Fragment"
+        android:name="com.ahchi.lisu.ui.TonesLesson3Fragment"
+        android:label="fragment_tones_lesson3"
+        tools:layout="@layout/fragment_tones_lesson3" />
+    <fragment
+        android:id="@+id/tonesLesson4Fragment"
+        android:name="com.ahchi.lisu.ui.TonesLesson4Fragment"
+        android:label="fragment_tones_lesson4"
+        tools:layout="@layout/fragment_tones_lesson4" />
+    <fragment
+        android:id="@+id/tonesLesson5Fragment"
+        android:name="com.ahchi.lisu.ui.TonesLesson5Fragment"
+        android:label="fragment_tones_lesson5"
+        tools:layout="@layout/fragment_tones_lesson5" />
+    <fragment
+        android:id="@+id/tonesLesson6Fragment"
+        android:name="com.ahchi.lisu.ui.TonesLesson6Fragment"
+        android:label="fragment_tones_lesson6"
+        tools:layout="@layout/fragment_tones_lesson6" />
 </navigation>
